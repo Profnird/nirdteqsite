@@ -1,0 +1,121 @@
+body {
+  font: 14px 'Century Gothic';
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#main-container{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+.header{
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+.header ul{
+  display: flex;
+  list-style-type: none;
+}
+.header ul li{
+  padding: 10px;
+  margin: 10px;
+}
+.header h3{
+  border: 1px solid;
+  align-self: center;
+  padding: 10px;
+}
+/* main-content */
+.main-content{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.content{
+  padding: 10px;
+  display: flex;
+  height: 60%;
+  background: #929292;
+  color: #fff;
+}
+.content p:first-child{
+  font-size: 10vw;
+}
+
+div.content a{
+  padding: 5px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 10px;
+  padding: 5px;
+  width: 100px;
+  text-align: center;
+  background: #7b7979;
+}
+div.content a:hover{
+  transition: 1s;
+  color:#7b7979;
+  background: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+div.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* cards */
+.cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  position: absolute;
+  align-self: center;
+  top: 52%;
+}
+.card-a{
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  margin: 10px;
+  background: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.card-a:hover{
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+#menu-btn{
+  display: none;
+}
+/* media-queries */
+
+@media screen and (max-width: 600px) {
+  .cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    position: none;
+    align-self: center;
+  }
+  .header ul{
+    display: none;
+  }
+  #menu-btn{
+    display: block;
+    padding: 10px;
+  }
+  
+}
+
