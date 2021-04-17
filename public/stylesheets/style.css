@@ -89,7 +89,7 @@ div.content{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 300px;
+  width: 200px;
   height: 200px;
   padding: 10px;
   margin: 10px;
@@ -123,7 +123,7 @@ div.content{
     align-self: center;
   }
   .card-a{
-    width: 180%;
+    width: 200px;
     height: 200px;
   }
   .header ul{
