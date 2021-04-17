@@ -10,6 +10,7 @@
       <meta name="twitter:description" content="As Nirds our mission and values are to help people and businesses throughout Africa and the world achieve their dreams and impact the world.">
       <meta name="og:description" content="As Nirds our mission and values are to help people and businesses throughout Africa and the world achieve their dreams and impact the world.">
     <title>nirdteq</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link href="/fontawesome/css/all.css" rel="stylesheet">
     <link rel='stylesheet' href='/stylesheets/style.css' />                
     <!-- fancy scripts by nird -->
@@ -22,19 +23,25 @@
         let uname = prompt("What's Your name? ");
         alert("Thank you " + uname + " for testing our site");
       }
+      let nav = () =>{
+        let getnav = document.getElementsByClassName("menu");
+        if(getnav === "menu"){
+          
+        }
+      }
     </script>
   </head>
   <body>
     <div id="main-container">
       <div class="header">
         <h3>nirdteq</h3>
-        <ul>
+        <ul class="menu">
           <li>About</li>
           <li>Hall</li>
           <li>Service</li>
           <li>Team</li>
         </ul>
-        <div id="menu-btn">&#9776;</div>
+        <i class="fas fa-bars dis-nav" onclick="nav();"></i>
       </div>
       <div class="main-content">
         <div class="content">

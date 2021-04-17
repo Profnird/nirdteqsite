@@ -1,5 +1,5 @@
 body {
-  font: 14px 'Century Gothic';
+  font: 14px 'Roboto';
 }
 *{
   margin: 0;
@@ -28,8 +28,10 @@ body {
   margin: 10px;
 }
 .header h3{
-  border: 1px solid;
   align-self: center;
+  padding: 10px;
+}
+.header i{
   padding: 10px;
 }
 /* main-content */
@@ -109,7 +111,6 @@ div.content{
   display: none;
 }
 /* media-queries */
-
 @media screen and (max-width: 600px) {
   .cards{
     display: flex;
@@ -132,9 +133,11 @@ div.content{
     display: block;
     padding: 10px;
   }
-  
+  .dis-nav{
+    
+  }
 }
-.cardb{
+/* .cardb{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 1fr 1fr;
@@ -142,4 +145,4 @@ div.content{
 .ga{
   border: 1px solid;
   padding: 30px
-}
+} */
