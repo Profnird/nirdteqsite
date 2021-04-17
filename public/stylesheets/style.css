@@ -77,21 +77,33 @@ div.content{
   justify-content: center;
   align-items: center;
   padding: 10px;
-  margin: 10px;
+  margin: 20px;
   position: absolute;
   align-self: center;
   top: 52%;
 }
 .card-a{
-  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
   height: 200px;
   padding: 10px;
   margin: 10px;
+  color:#7b7979;
   background: #fff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
+.card-a i{
+  color:#7b7979;
+  margin-bottom: 10px;
+}
 .card-a:hover{
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.card-d{
+  text-align: center;
 }
 #menu-btn{
   display: none;
@@ -109,6 +121,10 @@ div.content{
     position: none;
     align-self: center;
   }
+  .card-a{
+    width: 180%;
+    height: 200px;
+  }
   .header ul{
     display: none;
   }
@@ -118,4 +134,12 @@ div.content{
   }
   
 }
-
+.cardb{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.ga{
+  border: 1px solid;
+  padding: 30px
+}
