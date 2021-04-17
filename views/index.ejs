@@ -24,10 +24,7 @@
         alert("Thank you " + uname + " for testing our site");
       }
       let nav = () =>{
-        let getnav = document.getElementsByClassName("menu");
-        if(getnav === "menu"){
-          
-        }
+        alert("hey! Not yet ;)")
       }
     </script>
   </head>
@@ -35,13 +32,13 @@
     <div id="main-container">
       <div class="header">
         <h3>nirdteq</h3>
-        <ul class="menu">
+        <ul>
           <li>About</li>
           <li>Hall</li>
           <li>Service</li>
           <li>Team</li>
         </ul>
-        <i class="fas fa-bars dis-nav" onclick="nav();"></i>
+        <i id="menu-btn" class="fas fa-bars dis-nav" onclick="nav();"></i>
       </div>
       <div class="main-content">
         <div class="content">
