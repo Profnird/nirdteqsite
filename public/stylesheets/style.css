@@ -83,6 +83,7 @@ div.content{
   justify-content: center;
   align-items: center;
 }
+
 /* cards */
 .cards{
   display: flex;
@@ -144,6 +145,12 @@ div.content{
     margin: 10px;
     position: none;
     align-self: center;
+  }
+  div.content a{
+    transition: 1s;
+    color:#7b7979;
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
   .card-a{
     width: 200px;
