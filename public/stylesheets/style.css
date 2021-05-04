@@ -141,10 +141,10 @@ div.content{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    margin: 10px;
+    /* padding: 10px;
+    margin: 10px; */
     position: none;
-    align-self: center;
+    /* align-self: center; */
   }
   div.content a{
     transition: 1s;
