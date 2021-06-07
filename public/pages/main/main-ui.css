@@ -1,0 +1,14 @@
+html,body {
+  font: 14px 'Roboto';
+  margin:0;
+  padding: 0;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header{
+  border: 1px solid;
+}

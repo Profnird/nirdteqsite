@@ -22,6 +22,18 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
+
+
+// http://expressjs.com/en/starter/basic-routing.html
+// app.get('/home', function(request, response) {
+//   response.send('/views/about.html');
+// });
+
+// // http://expressjs.com/en/starter/basic-routing.html
+// app.get('/about', function(request, response) {
+//   response.sendFile(__dirname + '/views/team.html');
+// });
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
