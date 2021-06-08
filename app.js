@@ -6,6 +6,8 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var teamRouter = require('./routes/team');
+var productsRouter = require('./routes/products');
 
 var app = express();
 
@@ -21,8 +23,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/team', teamRouter);
+app.use('/products', productsRouter);
 
 
+// YOU SHOULD EJS TO RENDER THE PAGES THEN SEND IT TO THE CLIENT
 
 // http://expressjs.com/en/starter/basic-routing.html
 // app.get('/home', function(request, response) {
