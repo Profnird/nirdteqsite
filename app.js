@@ -5,9 +5,11 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-var teamRouter = require('./routes/team');
-var productsRouter = require('./routes/products');
+// var hallRouter = require('./routes/index');
+// var usersRouter = require('./routes/index');
+// var teamRouter = require('./routes/team');
+// var servicesRouter = require('./routes/services');
+// var productsRouter = require('./routes/products');
 
 var app = express();
 
@@ -22,22 +24,11 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
-app.use('/team', teamRouter);
-app.use('/products', productsRouter);
-
-
-// YOU SHOULD EJS TO RENDER THE PAGES THEN SEND IT TO THE CLIENT
-
-// http://expressjs.com/en/starter/basic-routing.html
-// app.get('/home', function(request, response) {
-//   response.send('/views/about.html');
-// });
-
-// // http://expressjs.com/en/starter/basic-routing.html
-// app.get('/about', function(request, response) {
-//   response.sendFile(__dirname + '/views/team.html');
-// });
+app.use('/about', indexRouter);
+app.use('/team', indexRouter);
+app.use('/hall', indexRouter);
+app.use('/products', indexRouter);
+app.use('/services', indexRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -19,7 +19,7 @@ html,body {
   padding: 10px;
   justify-content: space-between;
 }
-.header ul{
+.res-nav{
   display: flex;
   list-style-type: none;
 }
@@ -33,6 +33,13 @@ html,body {
 }
 .header i{
   padding: 10px;
+}
+ul li a{
+  text-decoration: none;
+  color: black;
+}
+ul li a:hover{
+  border-bottom: 2px solid;
 }
 /* main-content */
 .main-content{
@@ -134,6 +141,8 @@ div.content{
 .c-c{
   color: rgb(97, 24, 104);
 }
+
+
 /* media-queries */
 @media screen and (max-width: 600px) {
   .cards{
@@ -141,9 +150,6 @@ div.content{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border:1px solid; */
-    /* padding: 10px;
-    margin: 10px; */
     position: none;
     /* align-self: center; */
   }
@@ -157,7 +163,10 @@ div.content{
     width: 200px;
     height: 200px;
   }
-  .header ul{
+  /* .header ul{
+    display: none;
+  } */
+  .res-nav{
     display: none;
   }
   #menu-btn{
@@ -165,12 +174,60 @@ div.content{
     padding: 10px;
   }
 }
-/* .cardb{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr 1fr 1fr;
+
+@media screen and (max-width: 600px){
+  .res-nav.res {
+    position: relative;
+  }
+  .res-nav.res .dis-nav{
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  header>h3{
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .res-nav.res{
+    float: none;
+    display: block;
+    text-align: center;
+  }
 }
-.ga{
+
+/* team page style */
+.team-card{
   border: 1px solid;
-  padding: 30px
-} */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+/* grid layout */
+.ecard{
+  border: 1px solid;
+  padding: 20px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px,auto);
+}
+/* card items */
+.dcard{
+  border: 1px solid;
+  padding: 10px;
+}
+.one{
+  grid-column: 1/4;
+  grid-row: 1;
+}
+.one-one{
+  grid-column: 1;
+  grid-row: 1/4;
+}
+.description{
+  border: 1px solid;
+  padding: 10px;
+}

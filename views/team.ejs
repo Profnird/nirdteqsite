@@ -13,63 +13,43 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link href="/fontawesome/css/all.css" rel="stylesheet">
-                    
-    <!-- fancy scripts by nird -->
-    <script>
-      let fancyfunction = () =>{
-        setTimeout(
-          function name(params) {
-            alert("Hey weldone!, You are a nird")
-        },2000)
-        let uname = prompt("What's Your name? ");
-        alert("Thank you " + uname + " for testing our site");
-      }
-      let nav = () =>{
-        alert("hey! Not yet ;)")
-      }
-    </script>
   </head>
   <body>
     <div id="main-container">
       <div class="header">
         <h3>nirdteq</h3>
         <ul>
-          <li><a href="/pages/main/about.html">About</a> </li>
-          <li>Hall</li>
-          <li><a href="/pages/main/about.html">Service</a></li>
+          <li><a href="/about">About</a> </li>
+          <li><a href="/hall">Hall</a></li>
+          <li><a href="/services">Service</a></li>
           <li><a href="/team">Team</a> </li>
-          <li><a href="/products">Products</a> </li>
+          <li><a href="/products">Products</a></li>
         </ul>
         <div id="menu-btn" class="fas fa-bars dis-nav" onclick="nav();"></div>
       </div>
       <div class="main-content">
         <div class="content">
-          <p>Teams Page</p>
-          <a href="#" onclick="fancyfunction()">Explore</a>
+          <p>Team</p>
+          <!-- <a href="#" onclick="fancyfunction()">Explore</a> -->
         </div>
-        <div class="cards">
-          <div class="card-a c-a">
-            <div class="fas fa-eye fa-5x"></div>
-            <div class="card-d">
-              <h4>Vision 2021</h4>
-              <p>Build Up from Scratch</p>
-            </div>
+        <div class="team-card">
+            <p class="description">Developer Team</p>
+          <div class="ecard">
+            <div class="dcard one"></div>
+            <div class="dcard two"></div>
+            <div class="dcard three"></div>
+            <div class="dcard four"></div>
           </div>
-          <div class="card-a c-b">
-            <div class="fa fa-cog fa-5x"></div>
-            <div class="card-d">
-              <h4>Slogan</h4>
-              <p>Your Brain Is Bigger Than You Think</p>
-            </div>
+            <p class="description">Graphic Design Team</p>
+          <div class="ecard">
+            <div class="dcard one-one"></div>
+            <div class="dcard"></div>
+            <div class="dcard"></div>
+            <div class="dcard"></div>
+            <div class="dcard"></div>
+            <div class="dcard"></div>
           </div>
-          <div class="card-a c-c">
-            <div class="fas fa-clock fa-5x"></div>
-            <div class="card-d">
-              <h4>Deploying</h4>
-              <p>ArhinWare | CodeMate</p>
-            </div>
-          </div>
-          </div>
+        </div>
         </div>
     </div>
   </body>
