@@ -1,10 +1,13 @@
 // handle responsive nav
 let nav = () =>{
     var mn_btn = document.getElementById('menu');
-    if(mn_btn.className === "res-nav"){
+    var logo = document.getElementById('lg');
+    if(mn_btn.className === "res-nav" && logo.className === "logo"){
         mn_btn.className += " res";
-        console.log(mn_btn);
+        logo.className += " hide-lg";
+        // console.log(mn_btn);
     }else{
         mn_btn.className = "res-nav";
+        logo.className = "logo";
     }
 }

@@ -27,7 +27,7 @@ html,body {
   padding: 10px;
   margin: 10px;
 }
-.header h3{
+.logo{
   align-self: center;
   padding: 10px;
 }
@@ -46,10 +46,8 @@ ul li a:hover{
   /* border: 1px solid blue; */
   display: flex;
   flex-direction: column;
-  /* width: 100%; */
   height: 100%;
   margin:0;
-  /*padding: 0; */
 }
 .content{
   /* border:1px solid red;  */
@@ -176,22 +174,15 @@ div.content{
 }
 
 @media screen and (max-width: 600px){
-  .res-nav.res {
-    position: relative;
-  }
-  .res-nav.res .dis-nav{
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  header>h3{
-    position: absolute;
-    right: 0;
-    top: 0;
+  .hide-lg{
+    display: none;
   }
   .res-nav.res{
-    float: none;
-    display: block;
+    /* float: none; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
     text-align: center;
   }
 }
