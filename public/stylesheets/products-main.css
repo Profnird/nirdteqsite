@@ -1,0 +1,76 @@
+html,body {
+    font: 14px 'Roboto';
+    margin:0;
+    padding: 0;
+    height: 100vh;
+    /* background-image: url('/images/giphy.gif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.products-content{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/images/wave.svg);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size:contain;
+}
+
+
+.info-mid{
+    display: flex;
+    /* border: 1px solid; */
+}
+
+.info-mid-obj{
+    margin: 10px;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.description button{
+    border: none;
+    padding: 10px;
+    color: #fff;
+    background-color: #0099ff;
+}
+.description span{
+    margin: 10px;
+}
+
+.vector-img{
+    width: 500px;
+    height: 500px;
+    /* border: 1px solid; */
+    padding: 10px;
+    background-image: url(/images/Tech-Vector-PNG-Clipart.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.description span{
+    /* border: 1px solid; */
+    padding: 0px;
+}
+#desc{
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.description div img{
+    width: 100%;
+}
